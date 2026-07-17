@@ -157,7 +157,7 @@ def connect_mqtt():
     """
     try:
         print("Establishing connection with MQTT Broker...")
-        client = MQTTClient(MQTT_CLIENT_ID, MQTT_BROKER, port=1883, timeout=5)
+        client = MQTTClient(MQTT_CLIENT_ID, MQTT_BROKER, port=1883)
         client.connect()
         return client
     except Exception as e:
